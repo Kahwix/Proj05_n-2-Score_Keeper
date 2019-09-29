@@ -3,9 +3,6 @@
     padding: 0;
 }
 
-html {
-}
-
 body {
     background: url('../IMG/nba-Normal.jpeg') no-repeat center fixed;
     background-size: cover;
@@ -15,12 +12,14 @@ body {
 h1 {
     margin: 5rem;
     margin-top: 10rem;
-    color: blue;
+    color: black;
+    text-shadow: 3px 1px white;
 }
 
 h2 {
     margin: 5rem;
-    color: blue;
+    color: black;
+    text-shadow: 3px 1px white;
 }
 
 span {
@@ -38,4 +37,20 @@ button {
 body.darkmode {
     background: url('../IMG/nba-Dark.jpeg') no-repeat center fixed;
     background-size: cover;
+}
+
+.darkmode button {
+    color: white;
+    background: black;
+    border-radius: 50px;
+}
+
+.darkmode h1 {
+    color: white;
+    text-shadow: 3px 1px black;
+}
+
+.darkmode h2 {
+    color: rgb(0, 195, 65);
+    text-shadow: 3px 1px black;
 }
