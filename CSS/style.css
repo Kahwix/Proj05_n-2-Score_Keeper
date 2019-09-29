@@ -3,8 +3,32 @@
     padding: 0;
 }
 
+html {
+    background: url('../IMG/nba-Normal.jpeg') no-repeat center fixed;
+    background-size: cover;
+    background-color: transparent;
+}
+
 body {
-    background-image: url("IMG/nba-Normal.jpeg");
     text-align: center;
+}
+
+h1 {
     margin: 5rem;
+    margin-top: 10rem;
+    color: blue;
+}
+
+h2 {
+    margin: 5rem;
+    color: blue;
+}
+
+span {
+    color: red;
+    text-shadow: 2px 2px rgb(0, 0, 114);
+}
+
+button {
+    margin-left: 1.5rem;
 }
