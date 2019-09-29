@@ -6,8 +6,10 @@ const scorePlayer2 = document.querySelectorAll("span")[1];
 const winnerScore = document.querySelectorAll("span")[2];
 const input = document.querySelector("input");
 const player1Button = document.querySelectorAll("button")[0];
-const player2Button = document.querySelectorAll("button")[1];
-const reset = document.querySelectorAll("button")[2];
+const reset = document.querySelectorAll("button")[1];
+const player2Button = document.querySelectorAll("button")[2];
+const DarkMode = document.querySelectorAll("button")[3];
+
 
 let scoreP1 = 0;
 let scoreP2 = 0;
@@ -79,6 +81,12 @@ function setScoreMax() {
 
 }
 
+function changeBackGround(ev) {
+    if (ev.target.tagName === "BUTTON") {
+      document.body.classList.toggle("darkmode");
+    }
+}
+
 function scoreKeeper() {
     insertScoreintoSpanMax();
     insertScoreintoSpanP1();
@@ -93,3 +101,4 @@ window.addEventListener("load", scoreKeeper);
 player1Button.addEventListener("click", incrementScore1);
 player2Button.addEventListener("click", incrementScore2);
 input.addEventListener('change', setScoreMax);
+DarkMode.addEventListener('click', changeBackGround);
