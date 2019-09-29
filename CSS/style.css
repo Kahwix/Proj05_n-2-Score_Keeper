@@ -4,12 +4,11 @@
 }
 
 html {
-    background: url('../IMG/nba-Normal.jpeg') no-repeat center fixed;
-    background-size: cover;
-    background-color: transparent;
 }
 
 body {
+    background: url('../IMG/nba-Normal.jpeg') no-repeat center fixed;
+    background-size: cover;
     text-align: center;
 }
 
@@ -31,4 +30,12 @@ span {
 
 button {
     margin-left: 1.5rem;
+}
+
+
+/* Dark Mode */
+
+body.darkmode {
+    background: url('../IMG/nba-Dark.jpeg') no-repeat center fixed;
+    background-size: cover;
 }
