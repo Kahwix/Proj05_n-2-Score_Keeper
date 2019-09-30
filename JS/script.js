@@ -16,7 +16,7 @@ let scoreP2 = 0;
 let scoreMax = 5;
 
 
-// ============== Player 1 =================
+// ============== Joueur 1 =================
 function insertScoreintoSpanP1() {
     scorePlayer1.append(document.createTextNode(scoreP1));
 }
@@ -32,7 +32,7 @@ function incrementScore1() {
     }
 }
 
-// ============== Player 2 =================
+// ============== Joueur 2 =================
 function insertScoreintoSpanP2() {
     scorePlayer2.append(document.createTextNode(scoreP2));
 }
@@ -49,7 +49,7 @@ function incrementScore2() {
 }
 
 
-// ============== Winner Score =================
+// ============== Score Gagnant =================
 function insertScoreintoSpanMax() {
     winnerScore.append(document.createTextNode(scoreMax));
 }
@@ -72,14 +72,14 @@ function resetScores(){
 }
 
 
-// ============== Initial =================
+// ============== Gestion de Valeurs Max =================
 
 function setScoreMax() {
     scoreMax = +input.value;
     winnerScore.innerText = +input.value;
-    
-
 }
+
+// ============== DarkMode ================
 
 function changeBackGround(ev) {
     if (ev.target.tagName === "BUTTON") {
@@ -87,14 +87,15 @@ function changeBackGround(ev) {
     }
 }
 
+// ============= Fonction Général ============
+
 function scoreKeeper() {
     insertScoreintoSpanMax();
     insertScoreintoSpanP1();
     insertScoreintoSpanP2();
-
 }
 
-
+// ============= Interaction ==============
 
 reset.addEventListener("click", resetScores);
 window.addEventListener("load", scoreKeeper);
